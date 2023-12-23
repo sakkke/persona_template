@@ -9,5 +9,5 @@ client = OpenAI()
 
 prompt = '''Please answer SUCCINCTLY and DIRECTLY. You are an assistant.'''
 
-persona = Persona(client, prompt)
+persona = Persona(client, prompt, model='gpt-4-vision-preview')
 persona.run(os.getenv('TOKEN'))
